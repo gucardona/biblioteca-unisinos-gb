@@ -20,5 +20,14 @@ public class Main {
         Emprestimo emprestimo2 = new Emprestimo(livro1, professor);
         System.out.println();
         emprestimo2.exibirResumoEmprestimo();
+        System.out.println();
+        emprestimo2.devolver();
+        System.out.println();
+        emprestimo2.devolver();
+        System.out.println();
+
+        Emprestimo emprestimo3 = new Emprestimo(livro1, aluno);
+        // deve dar exception
+        Emprestimo emprestimo4 = new Emprestimo(livro1, aluno);
     }
 }
